@@ -18,7 +18,7 @@ body {
 .wrapper {
    max-width: 50%;
     margin: 0 auto;
-    
+    cursor:pointer;
 }
 
 h1 {
@@ -40,6 +40,7 @@ h1 {
     border-top: 1px solid #ddd;
     color: #00f1dd;
     padding: 1rem 0;
+    cursor:pointer;
 }
 
 .accord__header img {
@@ -52,7 +53,7 @@ h1 {
 .accord__header {
 display: flex;
 justify-content: space-between;
-
+cursor:pointer;
 
 }
 
