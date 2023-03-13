@@ -45,6 +45,7 @@ h1 {
 .accord__header img {
     visibility: hidden;
     width: 3rem;
+    height: 3rem ;
     transition: all 1s;
 }
 
@@ -109,3 +110,20 @@ justify-content: space-between;
     
  }
    
+ @media (max-width: 2220px) {
+    body {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    body {
+      font-size: 0.8rem;
+    }
+  }
