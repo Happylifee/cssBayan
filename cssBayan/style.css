@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 1.6rem;
+    background: #525151;
+    
+}
+
+.wrapper {
+   max-width: 50%;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+h1 {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 3.6rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+/* .accordion {
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.accord__label {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    color: #00f1dd;
+    padding: 1rem 0;
+    cursor:pointer;
+}
+
+.accord__header img {
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem ;
+    transition: all 1s;
+}
+
+.accord__header {
+display: flex;
+justify-content: space-between;
+cursor:pointer;
+
+}
+
+.accord__img {
+    width: 0%;
+    margin:0 auto;
+    padding: 20px 0 0 0;
+    
+    transition: all 2s ease-in-out;
+}
+.accord__input {
+    width: 0%;
+    height: 0%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.accord__input:checked + .accord__label .accord__header img{
+   transform: rotate(180deg);
+   
+}
+
+.accord__input:hover + .accord__label .accord__header img{
+    transform: rotate(180deg);
+    
+ }
+
+.accord__input:checked + .accord__label .accord__img {
+    width: 30%;
+    
+}
+
+
+.accord__input:checked +   .accord__label  .accord__header h2{
+    color:#fff;
+}
+ .accordion:hover .accord__img {
+    width: 30%;
+} 
+@media (hover: hover) {
+    /* when hover is supported */
+    .wrapper:hover .logo, .wrapper:hover h2 {
+      color: white;
+      visibility: visible;
+      cursor: pointer;
+    }
+}
+/* .accord__label:hover  .accord__header, 
+.accord__label:hover  .accord__img */
+.accord__label:active,
+.accord__label:active h2
+  {
+    color: #00f1dd;
+    opacity: 50%;
+    
+ }
+   
+ @media (max-width: 2220px) {
+    body {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    body {
+      font-size: 0.8rem;
+    }
+  }
